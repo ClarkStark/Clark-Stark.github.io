@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatos de Trabajo - Sistema de Mantenimiento</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="Página principal.css" rel="stylesheet" type="text/css"/>
+    <link href="Formatos de trabajo.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!-- Encabezado con información personal -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="personal-info">
+                    <h1>Héctor Evelio Aguirre López</h1>
+                    <p>Matrícula: 25000271</p>
+                    <p>Grupo: IME 1D</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="Datos generales de la empresa.html">Datos generales de la empresa</a></li>
+                <li><a href="Levantamiento de maquinaria.html">Maquinaria</a></li>
+                <li><a href="Actividades para los mantenimientos preventivos.html">Actividades mantenimientos preventivos</a></li>
+                <li><a href="Equipos tecnológicos para los mantenimientos predictivos.html">Equipos mantenimientos predictivos</a></li>
+                <li><a href="Calendario.html">Calendarización</a></li>
+                <li><a href="Formatos de trabajo.html">Formatos de trabajo</a></li>
+                <li><a href="Historial de mantenimiento y stock.html">Historial de stock y refacciones</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="container">
+            <section class="logo-section">
+                <img class="logo-placeholder" src="Imágenes/Logo.png" alt=""/>
+            </section>
+            
+            <div class="formatos-container">
+                <h1 class="page-title">Formatos de Trabajo</h1>
+                <p class="page-subtitle">Descarga los formatos oficiales para los diferentes tipos de mantenimiento y el manual de usuario de la máquina.</p>
+                
+                <div class="formatos-grid">
+                    <!-- Formato Mantenimiento Correctivo -->
+                    <div class="formato-card">
+                        <div class="formato-icon">🔧</div>
+                        <h3>Mantenimiento Correctivo</h3>
+                        <p>Formato para registrar las actividades de mantenimiento correctivo realizadas en los equipos y maquinaria.</p>
+                        <a href="Documentos/Mantenimiento correctivo.pdf" download class="download-btn">Descargar PDF</a>
+                    </div>
+                    
+                    <!-- Formato Mantenimiento Preventivo -->
+                    <div class="formato-card">
+                        <div class="formato-icon">🛠️</div>
+                        <h3>Mantenimiento Preventivo</h3>
+                        <p>Formato para planificar y documentar las actividades de mantenimiento preventivo programadas.</p>
+                        <a href="Documentos/Mantenimiento preventivo.pdf" download class="download-btn">Descargar PDF</a>
+                    </div>
+                    
+                    <!-- Formato Mantenimiento Predictivo -->
+                    <div class="formato-card">
+                        <div class="formato-icon">📊</div>
+                        <h3>Mantenimiento Predictivo</h3>
+                        <p>Formato para el registro de análisis y monitoreo que permiten predecir fallas en los equipos.</p>
+                        <a href="Documentos/Mantenimiento predictivo.pdf" download class="download-btn">Descargar PDF</a>
+                    </div>
+                    
+                    <!-- Manual de Usuario -->
+                    <div class="formato-card">
+                        <div class="formato-icon">📖</div>
+                        <h3>Manual de Usuario</h3>
+                        <p>Manual completo de operación y mantenimiento básico de la máquina para los operadores.</p>
+                        <a href="Documentos/MANUAL-DE-PROPIETARIO-BOMBA-DE-CALOR-HAYWARD-HP21404T.pdf" download class="download-btn">Descargar PDF</a>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h3>📋 Información Importante</h3>
+                    <p>Todos los formatos deben ser completados en su totalidad después de realizar las actividades de mantenimiento. Asegúrese de guardar una copia digital y física de cada formato completado para el historial de mantenimiento de los equipos.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sistema de Gestión de Mantenimiento. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simulación de descarga (en un entorno real, estos serían enlaces a archivos PDF reales)
+        document.querySelectorAll('.download-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // En un entorno real, esto descargaría el PDF
+                // Por ahora, mostramos un mensaje de confirmación
+                const formato = this.parentElement.querySelector('h3').textContent;
+                
+                // Para una implementación real, descomente la línea siguiente y asegúrese de que los archivos existan
+                window.location.href = this.getAttribute('href');
+            });
+        });
+    </script>
+</body>
+</html>

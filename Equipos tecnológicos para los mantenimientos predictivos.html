@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos tecnológicos para los mantenimientos predictivos</title>
+    <link href="Equipos tecnológicos para los mantenimientos predictivos.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="personal-info">
+                    <h1>Héctor Evelio Aguirre López</h1>
+                    <p>Matrícula: 25000271</p>
+                    <p>Grupo: IME 1D</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="Página principal.html">Inicio</a></li>
+                <li><a href="Datos generales de la empresa.html">Datos generales de la empresa</a></li>
+                <li><a href="Levantamiento de maquinaria.html">Maquinaria</a></li>
+                <li><a href="Actividades para los mantenimientos preventivos.html">Actividades mantenimientos preventivos</a></li>
+                <li><a href="Equipos tecnológicos para los mantenimientos predictivos.html">Equipos mantenimiento predictivo</a></li>
+                <li><a href="Calendario.html">Calendarización</a></li>
+                <li><a href="Formatos de trabajo.html">Formatos de trabajo</a></li>
+                <li><a href="Historial de mantenimiento y stock.html">Historial de mantenimiento y refacciones</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="container">
+            <h1 class="page-title">Equipos tecnológicos para los mantenimientos predictivos</h1>
+            
+            <h2 class="section-title">Equipos de Alta Tecnología para Mantenimiento Predictivo</h2>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Equipo</th>
+                            <th>Modelo</th>
+                            <th>Código</th>
+                            <th>Componente evaluado</th>
+                            <th>Cómo se utiliza</th>
+                            <th>Parámetros de alerta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="image-cell">
+                                <img class="image-placeholder" src="Imágenes/Analizador de vibraciones CSI 2140.png" alt=""/>
+                            </td>
+                            <td>Analizador de Vibraciones Portátil</td>
+                            <td>CSI 2140</td>
+                            <td class="code-cell">ANVIB</td>
+                            <td>Compresor y ventilador</td>
+                            <td>Se instalan sensores triaxiales en la carcasa del compresor y base del motor del ventilador. Mide velocidad RMS (mm/s) y aceleración (g) en frecuencias de 2 Hz a 20 kHz.</td>
+                            <td>Vibración > 4.5 mm/s indica necesidad de intervención</td>
+                        </tr>
+                        <tr>
+                            <td class="image-cell">
+                                <img class="image-placeholder" src="Imágenes/Cámara termográfica infrarroja FLIR T1040.png" alt=""/>
+                            </td>
+                            <td>Cámara Termográfica Infrarroja</td>
+                            <td>FLIR T1040</td>
+                            <td class="code-cell">TERMO</td>
+                            <td>Tablero electrónico HPEC-003 y conexiones del compresor</td>
+                            <td>Escaneo térmico a distancia de 1-2 metros con emisividad configurada en 0.95. Mediciones puntuales en terminales L1/L2, contactores del compresor, conexiones de sensores.</td>
+                            <td>ΔT > 15°C entre componentes similares indica falla inminente</td>
+                        </tr>
+                        <tr>
+                            <td class="image-cell">
+                                <img class="image-placeholder" src="Imágenes/Detector Ultrasónico de Fugas y Fricción UE Systems UltraProbe 9000.png" alt=""/>
+                            </td>
+                            <td>Detector Ultrasónico de Fugas y Fricción</td>
+                            <td>UE Systems UltraProbe 9000</td>
+                            <td class="code-cell">ULTRAS</td>
+                            <td>Sistema de refrigeración y cojinetes</td>
+                            <td>Sonda de contacto en tuberías de refrigerante y carcasa del compresor. Rango de frecuencia: 20 kHz a 100 kHz con heterodinización a rango audible.</td>
+                            <td>Aumento de 8 dB sobre línea base indica desarrollo de falla</td>
+                        </tr>
+                        <tr>
+                            <td class="image-cell">
+                                <img src="Imágenes/Analizador portátil de aceite Spectro Scientific FluidScan.png" alt=""/>
+                            </td>
+                            <td>Analizador de Calidad de Aceite del Compresor</td>
+                            <td>Spectro Scientific FluidScan</td>
+                            <td class="code-cell">ANACEI</td>
+                            <td>Sistema de lubricación del compresor</td>
+                            <td>Muestra de 10 ml de aceite tomada del puerto de servicio del compresor. Espectrometría infrarroja para medir: viscosidad, número ácido, contaminación por agua.</td>
+                            <td>Viscosidad fuera de ±10% especificación o partículas > 50 ppm</td>
+                        </tr>
+                        <tr>
+                            <td class="image-cell">
+                                <img src="Imágenes/Analizador de Flujo y Presión Diferencial.png" alt=""/>
+                            </td>
+                            <td>Analizador de Flujo y Presión Diferencial</td>
+                            <td>Siemens SITRANS F US</td>
+                            <td class="code-cell">FLUJO</td>
+                            <td>Intercambiador de calor de titanio</td>
+                            <td>Sensores de presión diferencial instalados en entrada/salida del intercambiador. Transductor de flujo por ultrasonido en tuberías de agua. Medición continua de ΔP y caudal (GPM) durante operación.</td>
+                            <td>ΔP > 15 psi o reducción de flujo > 20% indica necesidad de limpieza</td>
+                        </tr>
+                        <tr>
+                            <td class="image-cell">
+                                <img src="Imágenes/Analizador de potencia Fluke 438-II o Hioki PW3390.png" alt=""/>
+                            </td>
+                            <td>Analizador de Calidad Eléctrica</td>
+                            <td>Fluke 438-II</td>
+                            <td class="code-cell">ANELEC</td>
+                            <td>Motor del compresor y sistema de control</td>
+                            <td>Pinzas amperimétricas en alimentación L1/L2 del compresor. Análisis de: armónicos, factor de potencia, corriente de arranque, desbalanceo.</td>
+                            <td>THD > 5% o desbalanceo > 3% indica problemas eléctricos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h2 class="section-title">Frecuencia Recomendada de Monitoreo</h2>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Equipo</th>
+                            <th>Frecuencia</th>
+                            <th>Tiempo de medición</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ANVIB</td>
+                            <td>Mensual</td>
+                            <td>15 minutos</td>
+                        </tr>
+                        <tr>
+                            <td>TERMO</td>
+                            <td>Trimestral</td>
+                            <td>30 minutos</td>
+                        </tr>
+                        <tr>
+                            <td>ULTRAS</td>
+                            <td>Semestral</td>
+                            <td>20 minutos</td>
+                        </tr>
+                        <tr>
+                            <td>ANACEI</td>
+                            <td>Anual</td>
+                            <td>45 minutos</td>
+                        </tr>
+                        <tr>
+                            <td>FLUJO</td>
+                            <td>Mensual</td>
+                            <td>10 minutos</td>
+                        </tr>
+                        <tr>
+                            <td>ANELEC</td>
+                            <td>Semestral</td>
+                            <td>25 minutos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sistema de Gestión de Mantenimiento. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
